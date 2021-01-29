@@ -81,9 +81,22 @@ export default let BuilderPage = () => {
 
 - Integrate the [Builder API or SDK](#supported-frameworks) to your site or app
 - Create a free account on [builder.io](https://builder.io) and drag and drop to create and publish pages and content
-- Profit
 
-<img src="https://cdn.builder.io/api/v1/image/assets%2F444142b2cae54a19aeb8b5ba245feffe%2F8c2699f47fea48b296b43dbb422336e8" />
+## How is the content structured?
+
+In Builder, content is structured in [models](https://www.builder.io/c/docs/guides/getting-started-with-models), and customized with [custom fields](https://www.builder.io/c/docs/custom-fields) and [targeting](https://www.builder.io/c/docs/guides/targeting-and-scheduling)
+
+- **Builder pages** - full drag and drop control between your site's header and footer
+- **Builder sections** - make a part of a page visually editable in Builder and use our [targeting and scheduling](https://www.builder.io/c/docs/guides/targeting-and-scheduling) to decide who sees what
+- **Builder data** - fetch structured data from Builder and use it anywhere in your application (e.g. menu items)
+
+
+<img src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fe809eac6ae7140beab81ce4c3ee75e20" />
+
+
+Read more about how builder works [here](https://www.builder.io/c/docs/how-builder-works)
+
+See [here](#structuring-your-site) for examples on how to structure a site with Builder
 
 
 ## Framework Support
@@ -216,7 +229,21 @@ export default () => (
 );
 ```
 
+### Structuring your site
+
+There are a lot of ways you can use Builder for your site. Some of the main questions you'll want to ask yourselves - what on your site should be in your code vs in Builder.
+
+As a general rule, parts of your site that should be managed by non developers should probably be in Builder. Parts that are complex with a lot of code, should probably be in your codebase. Using [custom components](https://www.builder.io/c/docs/custom-react-components) in your Builder content can help you strike a good balance here as well
+
+Here are some examples we recommend for how to structure various pages on your site:
+
+
+![examples on how to structure your site](https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2Fc811a87f916f4e37990b1afc9df25721)
+
+
 ### Data models, components, SEO, and more
+
+<img src="https://cdn.builder.io/api/v1/image/assets%2F444142b2cae54a19aeb8b5ba245feffe%2F8c2699f47fea48b296b43dbb422336e8" />
 
 Builder.io gives you a ton more power and control than just page building. Check our guides on
 
@@ -268,7 +295,7 @@ if (page) {
 
 Want to work on the future of visual software development? Email me at steve@builder.io and let's talk
 
-## John the community!
+## Join the community!
 
 Questions? Requests? Feedback? Chat with us in our [official forum](https://forum.builder.io)!
 
